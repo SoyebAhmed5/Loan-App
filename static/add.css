@@ -1,0 +1,95 @@
+/* Import modern clean font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page container */
+body {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* Page heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0d47a1;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+/* Form styling */
+form {
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Label styling */
+form label {
+  font-weight: 500;
+  color: #333;
+  margin-top: 15px;
+  display: block;
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b0bec5;
+  border-radius: 8px;
+  margin-top: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+form input:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(25, 118, 210, 0.3);
+}
+
+/* Submit button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 22px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Button hover */
+form button:hover {
+  background: #0d47a1;
+}
+
+/* Responsive for small screens */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,124 @@
+/* Import modern clean font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Page heading */
+h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+/* Table Header */
+th {
+    background: #0d47a1;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Table Cells */
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Zebra effect */
+tr:nth-child(even) {
+    background: #f5f9ff;
+}
+
+/* Hover row highlight */
+tr:hover {
+    background: #e3f2fd;
+    transition: 0.3s;
+}
+
+/* Remove default border from HTML attribute */
+table[border] {
+    border: none !important;
+}
+
+/* Status colors */
+.approved {
+    color: white;
+    font-weight: 600;
+    background: #2e7d32;   /* green */
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.rejected {
+    color: white;
+    font-weight: 600;
+    background: #c62828;   /* red */
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* Action links */
+td a {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+/* Edit button style */
+td a:first-child {
+    background: #1976d2;
+    color: white;
+}
+td a:first-child:hover {
+    background: #0d47a1;
+}
+
+/* Delete button style */
+td a:last-child {
+    background: #c62828;
+    color: white;
+}
+td a:last-child:hover {
+    background: #8e0000;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

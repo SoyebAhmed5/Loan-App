@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit Loan Application</h2>
+
+<form method="POST">
+  <label for="name">Name:</label>
+  <input type="text" name="name" value="{{ app[1] }}" required />
+
+  <label for="income">Income:</label>
+  <input type="number" name="income" value="{{ app[2] }}" required />
+
+  <label for="credit_score">Credit Score:</label>
+  <input type="number" name="credit_score" value="{{ app[3] }}" required />
+
+  <label for="loan_amount">Loan Amount:</label>
+  <input type="number" name="loan_amount" value="{{ app[4] }}" required />
+
+  <button type="submit">Update</button>
+</form>
+
+{% endblock %}

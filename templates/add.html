@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}" />
+{% extends "base.html" %} {% block content %}
+<h2>Add Loan Application</h2>
+<form action="" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" name="name" value="" required />
+
+  <label for="income">Income:</label>
+  <input type="number" name="income" value="" required />
+
+  <label for="credit_score">Credit Score:</label>
+  <input type="number" name="credit_score" value="" required />
+
+  <label for="loan_amount">loan Amount:</label>
+  <input type="number" name="loan_amount" value="" required />
+
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}
